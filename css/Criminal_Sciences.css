@@ -125,3 +125,206 @@ blockquote {
 .related-links a:hover {
     color: #3498db;
 }
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f4f4f4, #e3f2fd);
+    line-height: 1.6;
+}
+
+
+.container {
+    max-width: 999px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-size: 1em;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 2px solid #3498db;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+}
+
+th {
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+td {
+    color: #2c3e50;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+td:hover {
+    background-color: #eef6ff;
+    box-shadow: none;
+}
+
+tr:nth-child(even) td {
+    background-color: #f0f8ff;
+}
+
+tr:hover td {
+    background-color: #dfefff;
+    box-shadow: none;
+}
+
+
+.student-card {
+    background: #f9f9f9;
+    border: 2px solid #3498db;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.student-card h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+}
+.bio {
+    font-size: 1.2em;
+    color: #555;
+    margin: 0;
+}
+.form-section {
+    margin: 50px 0;
+    padding: 30px;
+    background-color: #eef6ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.form-section h3 {
+    color: #3498db;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+input[type="text"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+.info-section {
+    background-color: #eaf6ff;
+    padding: 20px;
+    margin: 30px 0;
+    border-left: 5px solid #3498db;
+    border-radius: 10px;
+}
+.info-section h3 {
+    color: #2c3e50;
+    font-size: 1.6em;
+    margin-top: 0;
+}
+.info-section p, .info-section ul {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #555;
+}
+ul {
+    padding-left: 20px;
+}
+ul li {
+    margin-bottom: 10px;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.image-gallery img {
+    max-width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.image-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.introduction {
+    background: linear-gradient(to right, #f0f8ff, #e3f2fd);
+    border-left: 5px solid #3498db;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.introduction h2 {
+    font-size: 2.2em;
+    color: #2c3e50;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.introduction p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    margin: 0;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
