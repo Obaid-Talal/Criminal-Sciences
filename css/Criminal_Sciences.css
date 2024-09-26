@@ -1,4 +1,3 @@
-/* General Styling */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -7,7 +6,6 @@ body {
     line-height: 1.6;
 }
 
-/* Top Navigation Bar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -18,7 +16,7 @@ body {
 }
 
 .navbar .project-name {
-    font-size: 30px; /* حجم أصغر */
+    font-size: 30px;
     font-weight: bold;
     color: white;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
@@ -29,20 +27,19 @@ body {
 }
 
 .navbar .nav-links {
-    display: flex; /* Align links in a row */
-    gap: 20px; /* Space between links */
+    display: flex;
+    gap: 20px;
 }
 
 .nav-button {
     text-decoration: none;
-    font-size: 14px; /* حجم أصغر للأزرار */
-    padding: 10px 15px; /* تعديل الحشوة */
+    font-size: 14px;
+    padding: 10px 15px;
     border-radius: 20px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Button Colors */
 .nav-button:nth-child(1) { color: #3498db; }
 .nav-button:nth-child(2) { color: #e67e22; }
 .nav-button:nth-child(3) { color: #2ecc71; }
@@ -51,10 +48,8 @@ body {
 .nav-button:nth-child(6) { color: #e74c3c; }
 
 .nav-button:hover {
-    /* No change on hover */
 }
 
-/* Container Styling */
 .container {
     max-width: 999px;
     margin: 40px auto;
@@ -64,9 +59,8 @@ body {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Styling */
 .mission-section {
-    background-color: #d0e7ff; /* لون أزرق فاتح */
+    background-color: #d0e7ff;
     border-left: 5px solid #3498db;
     padding: 20px;
     border-radius: 10px;
@@ -94,14 +88,14 @@ p, ul {
     color: #555;
     margin-bottom: 20px;
     text-align: justify;
-    background-color: #ffffff; /* خلفية بيضاء للنصوص */
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     padding: 10px;
 }
 
 ul {
-    padding-left: 20px; /* Adding padding for list items */
+    padding-left: 20px;
 }
 
 blockquote {
@@ -112,7 +106,6 @@ blockquote {
     color: #666;
 }
 
-/* Related Links Styling */
 .related-links {
     list-style: none;
     padding: 0;
