@@ -329,3 +329,121 @@ ul li {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
+/* Basic styles */
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    background-color: #1e3a8a;
+    color: #000; /* Black text for better visibility */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Faculty section */
+#faculty {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 10px;
+}
+
+.faculty-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Slightly larger width for a better layout */
+    margin: 15px;
+    transition: transform 0.3s;
+}
+
+.faculty-member:hover {
+    transform: translateY(-10px);
+}
+
+.faculty-member img {
+    border-radius: 50%;
+    width: 180px; /* Increased image size */
+    height: 180px;
+    border: 4px solid #1e3a8a;
+}
+
+h2 {
+    color: #1e3a8a;
+    font-size: 1.5rem;
+    margin: 15px 0 10px 0;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Buttons */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #999;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
