@@ -358,6 +358,65 @@
         </div>
 
     </div>
+    <header>
+        <h1>Faculty Members</h1>
+        <p>Meet the esteemed faculty members at the Criminal Science Institute</p>
+    </header>
+
+    <section id="faculty">
+        <div class="faculty-member">
+            <img src="../images/ahmad.jpg" alt="Dr. Ahmed Al-Ali">
+            <h2>Dr. Ahmed Al-Ali</h2>
+            <p>Assistant Professor of Criminology</p>
+            <button onclick="showDetails('ahmed')">Details</button>
+        </div>
+
+        <div class="faculty-member">
+            <img src="../images/sarah.jpg" alt="Dr. Sara Youssef">
+            <h2>Dr. Sarah Youssef</h2>
+            <p>Forensic Science Specialist</p>
+            <button onclick="showDetails('sarah')">Details</button>
+        </div>
+
+        <div class="faculty-member">
+            <img src="../images/kald.jpeg" alt="Dr. Khaled Mahmoud">
+            <h2>Dr. Khaled Mahmoud</h2>
+            <p>Head of Criminal Investigations Department</p>
+            <button onclick="showDetails('khaled')">Details</button>
+        </div>
+
+        <!-- Adding more faculty members -->
+        <div class="faculty-member">
+            <img src="../images/laila.jpeg" alt="Dr. Laila Hassan">
+            <h2>Dr. Laila Hassan</h2>
+            <p>Professor of Forensic Evidence</p>
+            <button onclick="showDetails('laila')">Details</button>
+        </div>
+
+        <div class="faculty-member">
+            <img src="../images/omar.jpg" alt="Dr. Omar Faisal">
+            <h2>Dr. Omar Faisal</h2>
+            <p>Associate Professor of Digital Forensics</p>
+            <button onclick="showDetails('omar')">Details</button>
+        </div>
+
+        <div class="faculty-member">
+            <img src="../images/noor.jpeg" alt="Dr. Noor Abdullah">
+            <h2>Dr. Noor Abdullah</h2>
+            <p>Forensic Toxicology Expert</p>
+            <button onclick="showDetails('noor')">Details</button>
+        </div>
+    </section>
+
+    <!-- Modal for details -->
+    <div id="details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="../javaSq/javas.js"></script>
 </body>
 
 </html>
