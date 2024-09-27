@@ -6,8 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criminal Sciences Institute</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../css/Criminal_Sciences.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+        }
+
+        .project-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-button {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-button:hover {
+            color: #ffcc00;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .image-gallery {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .image-gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .student-card {
+            background: #ffffff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .form-section input,
+        .form-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-section input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-section input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .info-section {
+            background: #f0f0f0;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .video-section {
+            margin: 20px 0;
+        }
+
+        .video-section iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .nav-button {
+                padding: 10px 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -18,21 +168,17 @@
             <a class="nav-button" href="#mission_and_goals">Mission and Goals</a>
             <a class="nav-button" href="#faculty">Faculty</a>
             <a class="nav-button" href="#projects">Graduation Projects</a>
-            <a class="nav-button" href="#introduction_and">Top Students</a>
+            <a class="nav-button" href="#top_students">Top Students</a>
             <a class="nav-button" href="#activities">Activities</a>
             <a class="nav-button" href="#contact">Contact</a>
         </div>
     </nav>
 
     <div class="container">
-
         <div class="mission-section" id="mission_and_goals">
             <h2>Mission and Goals</h2>
-
             <h3>Mission Statement</h3>
-            <p>The Criminal Sciences Institute aims to equip students with the knowledge and skills necessary to
-                understand and apply the principles of criminal sciences, enhancing their ability to investigate crimes
-                and analyze evidence.</p>
+            <p>The Criminal Sciences Institute aims to equip students with the knowledge and skills necessary to understand and apply the principles of criminal sciences, enhancing their ability to investigate crimes and analyze evidence.</p>
 
             <h3>General Objectives</h3>
             <ul>
@@ -48,21 +194,14 @@
             </ul>
 
             <h3>Importance of Mission and Goals</h3>
-            <p>The mission and goals guide the institute towards achieving its vision and positively impacting society,
-                shaping the future of students and their influence in the community.</p>
+            <p>The mission and goals guide the institute towards achieving its vision and positively impacting society, shaping the future of students and their influence in the community.</p>
 
             <h3>Future Vision</h3>
-            <p>We strive to enhance education and training in the field of criminal sciences, updating programs to meet
-                community and job market needs.</p>
-
-            <h3>Images and Illustrations</h3>
-            <p>We plan to include images representing the institute, such as classrooms, student activities, or anything
-                that reflects life at the institute.</p>
+            <p>We strive to enhance education and training in the field of criminal sciences, updating programs to meet community and job market needs.</p>
 
             <h3>Student Testimonials</h3>
             <blockquote>
-                “My experience at the Criminal Sciences Institute has been transformative, providing me with invaluable
-                skills that I apply daily in my career.” – Graduate Student
+                “My experience at the Criminal Sciences Institute has been transformative, providing me with invaluable skills that I apply daily in my career.” – Graduate Student
             </blockquote>
 
             <h3>Contact Information</h3>
@@ -71,8 +210,7 @@
             <p>Phone: <a href="tel:+1234567890">+123-456-7890</a></p>
 
             <h3>Interactive Section</h3>
-            <p>We encourage visitors to share their thoughts on our mission and goals through our <a
-                    href="https://www.surveymonkey.com/r/your_feedback_survey" target="_blank">feedback survey</a>.</p>
+            <p>We encourage visitors to share their thoughts on our mission and goals through our <a href="https://www.surveymonkey.com/r/your_feedback_survey" target="_blank">feedback survey</a>.</p>
 
             <h3>Related Links</h3>
             <ul class="related-links">
@@ -83,11 +221,11 @@
             </ul>
         </div>
 
-        <div class="introduction" id="introduction_and">
+        <div class="introduction" id="top_students">
             <h2>Introduction</h2>
             <p>This page honors the top students at the Criminal Sciences Institute, recognizing their academic achievements and encouraging other students. The top students serve as role models for their peers and positively impact the institute's reputation.</p>
         </div>
-            
+
         <h2>List of Top Students</h2>
         <table>
             <thead>
@@ -133,208 +271,91 @@
 
         <h2>Student Achievements</h2>
         <div class="image-gallery">
-            <img src="../images/image17.jpg" alt="Award Ceremony 2024">
-            <img src="../images/image18.jpg" alt="Student Achievements">
-            <img src="../images/image19.jpg" alt="Group Photo">
-            <img src="../images/image20.jpg" alt="Group Photo1">
+            <img src="student_event1.jpg" alt="Event 1" style="width: 48%;">
+            <img src="student_event2.jpg" alt="Event 2" style="width: 48%;">
         </div>
 
-        <h2>News About Top Students</h2>
+        <div class="student-card" id="student1">
+            <h3>Ahmad Ali</h3>
+            <p><strong>Major:</strong> Criminal Sciences</p>
+            <p><strong>Cumulative GPA:</strong> 3.9</p>
+            <h4>Biography:</h4>
+            <p>Ahmad is known for his exceptional analytical skills and contributions to various research projects in criminal investigations.</p>
+        </div>
+
+        <div class="student-card" id="student2">
+            <h3>Fatima Hassan</h3>
+            <p><strong>Major:</strong> Data Analysis</p>
+            <p><strong>Cumulative GPA:</strong> 3.8</p>
+            <h4>Biography:</h4>
+            <p>Fatima excelled in her studies and won the Best Graduation Project award for her innovative approach to data analysis in criminal cases.</p>
+        </div>
+
+        <h2>Latest News and Updates</h2>
         <div class="info-section">
-            <h3>Recent Updates</h3>
-            <p>Congratulations to our top students for receiving scholarships at prestigious universities!</p>
-            <p>Fatima Hassan has been invited to present her research at an international conference.</p>
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li><strong>Annual Criminal Justice Conference:</strong> October 15, 2024</li>
+                <li><strong>Workshop on Forensic Science:</strong> November 20, 2024</li>
+                <li><strong>Guest Lecture Series:</strong> December 5, 2024</li>
+            </ul>
         </div>
 
-        <h2>Additional Details for Each Student</h2>
-
-        <div id="student1" class="student-card">
-            <h3>
-                <i class="fas fa-user-graduate"></i> Ahmad Ali
-            </h3>
-            <p class="bio"><strong>Bio:</strong> An outstanding student in Criminal Sciences, with a keen interest in
-                cybersecurity issues. Ahmad has demonstrated exceptional analytical skills and a passion for developing
-                innovative solutions to complex security problems.</p>
-            <h4>Projects</h4>
-            <ul>
-                <li>Cybersecurity Strategy Development: A comprehensive approach to enhancing the security protocols of
-                    the
-                    institute.</li>
-                <li>Phishing Awareness Campaign: Developed educational materials to help students recognize phishing
-                    attempts.</li>
-            </ul>
-            <h4>Activities</h4>
-            <ul>
-                <li>Member of Cybersecurity Club: Engages in discussions and workshops related to current security
-                    trends.
-                </li>
-                <li>Organized a Hackathon: Led a team in a competition to develop security solutions.</li>
-            </ul>
-
-            <h4>Photos</h4>
-            <div class="image-gallery">
-                <img src="../images/image1.jpg" alt="Ahmad Ali Project 1">
-                <img src="../images/image2.jpg" alt="Ahmad Ali Award">
-                <img src="../images/image3.jpg" alt="Ahmad Ali Hackathon">
-                <img src="../images/image4.jpg" alt="Ahmad Ali Workshop">
-            </div>
-
-            <h4>Other Information</h4>
-            <p>Ahmad is also a talented coder and enjoys participating in hackathons. He is committed to continuous
-                learning
-                and often shares his insights on cybersecurity trends through his blog.</p>
+        <h2>Student Videos</h2>
+        <div class="video-section">
+            <h3>Introduction to Criminal Sciences</h3>
+            <iframe src="https://www.youtube.com/embed/example_video1" allowfullscreen></iframe>
         </div>
 
-        <div id="student2" class="student-card">
-            <h3>
-                <i class="fas fa-user-graduate"></i> Fatima Hassan
-            </h3>
-            <p class="bio"><strong>Bio:</strong> A specialist in data analysis, dedicated to enhancing information
-                security.
-                Fatima's research focuses on utilizing data to uncover trends that can lead to improved security
-                measures.
-            </p>
-            <h4>Projects</h4>
-            <ul>
-                <li>Data Visualization for Crime Trends: Analyzed crime data to provide visual insights that aid in
-                    decision-making.</li>
-                <li>Predictive Analytics Model: Developed a model that predicts potential crime hotspots based on
-                    historical
-                    data.</li>
-            </ul>
-            <h4>Activities</h4>
-            <ul>
-                <li>Volunteer at Local NGO: Actively participates in community service and educational programs.</li>
-                <li>Workshops on Data Analysis: Conducts sessions to teach peers about data analysis tools and
-                    techniques.
-                </li>
-            </ul>
-
-            <h4>Photos</h4>
-            <div class="image-gallery">
-                <img src="../images/image5.jpg" alt="Fatima Hassan Project 1">
-                <img src="../images/image6.jpg" alt="Fatima Hassan Presentation">
-                <img src="../images/image7.jpg" alt="Fatima Data Analysis Workshop">
-                <img src="../images/image8.jpg" alt="Fatima Community Service">
-            </div>
-            <h4>Other Information</h4>
-            <p>Fatima is passionate about mentoring younger students in data science and has led workshops to share her
-                knowledge. She aims to inspire others to leverage data for social good.</p>
-        </div>
-
-        <div id="student3" class="student-card">
-            <h3>
-                <i class="fas fa-user-graduate"></i> Sara Khalil
-            </h3>
-            <p class="bio"><strong>Bio:</strong> A talented forensic science student, known for her dedication and hard
-                work. Sara's attention to detail is key to her success in forensic investigations.</p>
-            <h4>Projects</h4>
-            <ul>
-                <li>Forensic Analysis of Digital Evidence: Conducted a comprehensive study focusing on the application
-                    of
-                    digital forensics in criminal cases.</li>
-                <li>Crime Scene Simulation: Developed a simulated crime scene to educate students about forensic
-                    investigation techniques.</li>
-            </ul>
-            <h4>Activities</h4>
-            <ul>
-                <li>Leader of Forensic Science Society: Organizes events to promote forensic science awareness.</li>
-                <li>Guest Speaker at Conferences: Shares insights on forensic science and its impact on criminal
-                    justice.
-                </li>
-            </ul>
-            <h4>Photos</h4>
-            <div class="image-gallery">
-                <img src="../images/image9.jpg" alt="Sara Khalil Project 1">
-                <img src="../images/image10.jpg" alt="Sara Khalil Research">
-                <img src="../images/image11.jpg" alt="Sara Crime Scene Simulation">
-                <img src="../images/image12.jpg" alt="Sara Conference">
-            </div>
-            <h4>Other Information</h4>
-            <p>Sara is involved in community outreach programs to educate the public about forensic science and often
-                gives
-                talks at schools. Her enthusiasm for teaching others is evident in her interactions.</p>
-        </div>
-
-        <div id="student4" class="student-card">
-            <h3>
-                <i class="fas fa-user-graduate"></i> Mohamed Saad
-            </h3>
-            <p class="bio"><strong>Bio:</strong> A bright student in cybersecurity with a passion for innovation.
-                Mohamed is
-                always seeking to expand his knowledge and apply it to real-world challenges.</p>
-            <h4>Projects</h4>
-            <ul>
-                <li>Cybersecurity Awareness Campaign: Developed materials and hosted events to educate students about
-                    online
-                    safety practices.</li>
-                <li>Security Audit of University Systems: Conducted an audit to identify vulnerabilities and propose
-                    improvements.</li>
-            </ul>
-            <h4>Activities</h4>
-            <ul>
-                <li>Organizer of Cybersecurity Workshops: Facilitates sessions for students to learn about cybersecurity
-                    measures.</li>
-                <li>Mentorship Programs: Mentors junior students in cybersecurity practices and career advice.</li>
-            </ul>
-            <h4>Photos</h4>
-            <div class="image-gallery">
-                <img src="../images/image13.jpg" alt="Mohamed Saad Project 1">
-                <img src="../images/image14.jpg" alt="Mohamed Saad Workshop">
-                <img src="../images/image15.jpg" alt="Mohamed Saad Cybersecurity Event">
-                <img src="../images/image16.jpg" alt="Mohamed Saad Presentation">
-            </div>
-            <h4>Other Information</h4>
-            <p>Mohamed is actively involved in research on emerging cybersecurity threats and enjoys sharing his
-                findings
-                with the community. He aims to contribute to safer online environments.</p>
-        </div>
-
-        <h2>Feedback and Comments</h2>
+        <h2>Send Congratulations</h2>
         <div class="form-section">
-            <h3>Send Your Congratulations to the Top Students</h3>
-            <form action="submit_feedback.php" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <textarea name="feedback" placeholder="Your Message" rows="4" required></textarea>
-                <input type="submit" value="Submit">
+            <form action="send_congratulations.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Send Congratulations">
             </form>
         </div>
 
-        <h2>Contact Information and Support</h2>
         <div class="info-section">
-            <h3>Contact Us</h3>
-            <p>For more information about the top students or future activities, you can contact the institute via
-                email: <a href="mailto:info@criminalsciences.edu">info@criminalsciences.edu</a></p>
-        </div>
-
-        <div class="info-section">
-            <h3>Statistics</h3>
-            <p>Number of top students in each major this year:</p>
+            <h3>Contact and Support</h3>
+            <p>If you have any questions or need support, please reach out to us:</p>
             <ul>
-                <li>Criminal Sciences: 5</li>
-                <li>Data Analysis: 3</li>
-                <li>Forensic Science: 2</li>
-                <li>Cybersecurity: 1</li>
+                <li>Email: <a href="mailto:support@criminalsciencesinstitute.edu">support@criminalsciencesinstitute.edu</a></li>
+                <li>Phone: <a href="tel:+1234567890">+123-456-7890</a></li>
+                <li>Office Hours: Monday to Friday, 9 AM - 5 PM</li>
             </ul>
         </div>
 
         <div class="info-section">
             <h3>Ongoing Support</h3>
-            <p>The institute offers support programs for top students, including:</p>
+            <p>We provide continuous support for our top students through:</p>
             <ul>
-                <li>Internship opportunities</li>
-                <li>Scholarships</li>
+                <li>Internships in leading criminal justice agencies.</li>
+                <li>Scholarships for further studies.</li>
+                <li>Networking opportunities with industry professionals.</li>
             </ul>
         </div>
 
         <div class="info-section">
-            <h3>List of Graduate Top Students</h3>
-            <p>Previous top students have achieved remarkable successes in their fields and have been accepted into top
-                universities.</p>
+            <h3>Visitor Comments</h3>
+            <div id="comments-section">
+                <p><strong>Jane Doe:</strong> Great program! The faculty is very supportive.</p>
+                <p><strong>John Smith:</strong> I had an amazing experience learning here.</p>
+            </div>
+            <h4>Leave a Comment</h4>
+            <form action="submit_comment.php" method="post">
+                <input type="text" placeholder="Your Name" required>
+                <textarea placeholder="Your Comment" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </div>
-
-    </div>
-
 
     </div>
 </body>
